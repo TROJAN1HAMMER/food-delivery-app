@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: food-app
-        image: th500/food-app:v1
+        image: th500/food-delivery-app:latest  # Updated to match your previous build
         ports:
         - containerPort: 8080
         resources:
@@ -23,8 +23,7 @@ spec:
             cpu: "250m"      
           limits:
             memory: "512Mi"  
-            cpu: "500m"     
-        
+            cpu: "500m" 
 ---
 apiVersion: v1
 kind: Service
